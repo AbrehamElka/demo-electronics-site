@@ -37,7 +37,7 @@ export function DeleteProductModal({
           <p className="text-muted-foreground">
             Are you sure you want to delete{" "}
             <span className="font-semibold text-foreground">
-              "{productName}"
+              &quot;{productName}&quot;
             </span>
             ?
           </p>
