@@ -33,9 +33,12 @@ export default function AdminDashboard() {
 
   // Calculate stats
   const totalProducts = products.length;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const inStockProducts = products.filter((p) => p.inStock).length;
   const outOfStockProducts = totalProducts - inStockProducts;
+
   const totalValue = products.reduce(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (sum, product) => sum + (product.discountPrice || product.price),
     0
   );
