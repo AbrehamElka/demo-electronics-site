@@ -385,7 +385,7 @@ export function ProductCatalog() {
                 ))}
                 {searchQuery && (
                   <Badge variant="secondary" className="gap-1">
-                    "{searchQuery}"
+                    &quot;{searchQuery}&quot;
                     <X
                       className="h-3 w-3 cursor-pointer"
                       onClick={() => setSearchQuery("")}
