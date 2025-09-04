@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, ShoppingCart } from "lucide-react";
-// import { OrderModal } from "@/components/order-modal"
+import { OrderModal } from "@/components/order-modal";
 import Image from "next/image";
 const featuredProducts = [
   {
@@ -152,16 +152,18 @@ export function FeaturedProducts() {
         </div>
       </div>
 
-      {/* {selectedProduct && (
+      {selectedProduct && (
         <OrderModal
           isOpen={isModalOpen}
           onClose={closeModal}
           productName={selectedProduct.name}
           productPrice={
-            selectedProduct.discountPrice ? `$${selectedProduct.discountPrice}` : `$${selectedProduct.price}`
+            selectedProduct.discountPrice
+              ? `$${selectedProduct.discountPrice}`
+              : `$${selectedProduct.price}`
           }
         />
-      )} */}
+      )}
     </section>
   );
 }
