@@ -456,7 +456,7 @@ export function ProductCatalog() {
                           </>
                         ) : (
                           <span className="text-lg font-bold text-foreground">
-                            ${product.price}
+                            {formatNumber(product.price)} birr
                           </span>
                         )}
                       </div>
