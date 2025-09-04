@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/hero-section";
 import { FeaturedProducts } from "@/components/featured-products";
+import { Footer } from "@/components/footer";
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -10,7 +11,7 @@ const Home = () => {
         <HeroSection />
         <FeaturedProducts />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
