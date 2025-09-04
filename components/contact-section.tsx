@@ -55,7 +55,8 @@ export function ContactSection() {
         </h1>
         <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
           Have questions about our products or need assistance with your order?
-          We're here to help! Reach out to us through any of the methods below.
+          We&apos;re here to help! Reach out to us through any of the methods
+          below.
         </p>
       </div>
 
@@ -243,8 +244,8 @@ export function ContactSection() {
       <div className="mt-16 text-center">
         <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
         <p className="text-muted-foreground mb-8">
-          Can't find what you're looking for? Check out our most common
-          questions below.
+          Can&apos;t find what you&apos;re looking for? Check out our most
+          common questions below.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
